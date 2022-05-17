@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.container {
+    width: 60%;
+    height: 25%;
+    margin: 1rem auto; 
+    box-shadow: 3px 3px 10px gray;
+    background-color: rgb(245, 248, 248);  
+    
+}
+.hangman {
+    display: none;
+}
+
+.button {
+    margin: 2px;
+    padding: 5px 10px;
+
+}
+.gameContainer {
+    width: 65%;
+    height: 80%;
+    margin: 5px;
+    box-shadow: 3px 3px 5px gray;
+}
+
+   

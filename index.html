@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hangman Game</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <p></p> 
+    <h1>Hangman Game</h1>
+</head>
+
+<body onload="newGame()">  
+  <svg viewBox="132.637 79.582 200.965 214.228" width="300.965" height="314.228">
+    <rect x="132.637" y="287.781" width="200.965" height="6.029" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"></rect>
+    <rect x="198.955" y="79.582" width="5.627" height="214.228" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"></rect>
+    <rect x="199.357" y="79.582" width="86.013" height="5.225" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"></rect>
+    <rect x="271.704" y="85.209" width="0.402" height="32.154" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"></rect>
+    <!--head-->>
+    <g id="1" class="hangman">
+    <ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="272.106" cy="129.421" rx="12.862" ry="13.264"></ellipse>
+    <ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="268.288" cy="126.005" rx="2.211" ry="2.211"></ellipse>
+    <ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="277.733" cy="126.407" rx="2.412" ry="2.613"></ellipse>
+    <ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="274.518" cy="135.249" rx="5.225" ry="1.005"></ellipse>
+    </g>
+    <!--body-->
+    <rect id="2" class="hangman" x="270.9" y="143.087" width="2.412" height="60.691" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" rx="0.804" ry="0.804"></rect>
+    <!--arms-->
+    <line  id= "3" class="hangman" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" x1="273.312" y1="155.145" x2="297.427" y2="179.261"></line>
+    <line  id="4" class="hangman" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" x1="270.498" y1="154.743" x2="247.588" y2="180.466"></line>
+    <!--legs-->
+    <line id="5" class="hangman" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" x1="270.9" y1="203.376" x2="247.187" y2="234.325"></line>
+    <line id="6" class="hangman" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" x1="274.116" y1="202.974" x2="298.232" y2="233.119"></line>
+    Sorry, your browser does not support inline SVG.
+  </svg>
+  <p id ="displayResult"></p>
+  <div class="container">    
+    <button id="btnNewGame" onclick="window.location.reload();">New Game</button>   
+    <button id="btnReplaygame" onclick="newGame()">Replay Game</button>   
+    <div class="letters">
+      <p id="guessedLetters"></p>
+    </div>
+  </div>     
+</body>
+
+</html>
